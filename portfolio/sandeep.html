@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandeep Kumar - Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+  <style>
+    :root {
+  --primary: #0077b6;
+  --secondary: #023e8a;
+  --light: #f4f7fa;
+  --accent: #90e0ef;
+  --text-dark: #222;
+  --text-light: #555;
+  --bg-card: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--light);
+  color: var(--text-dark);
+  line-height: 1.7;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: var(--bg-card);
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header */
+.profile-header {
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  color: var(--primary);
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.profile-grid div {
+  background: linear-gradient(135deg, #e0f7ff, #caf0f8);
+  padding: 14px 16px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--shadow);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+
+.profile-grid div:hover {
+  transform: translateY(-2px);
+}
+
+.profile-grid a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.profile-grid a:hover {
+  text-decoration: underline;
+}
+
+/* Section Titles */
+.section {
+  margin-top: 35px;
+}
+
+.section h2 {
+  position: relative;
+  font-size: 22px;
+  color: var(--secondary);
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 5px solid var(--accent);
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  background: var(--accent);
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  color: #000;
+  box-shadow: 0 2px 6px var(--shadow);
+  transition: 0.3s ease;
+}
+
+.skills-list li:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Job Titles */
+.job-title {
+  font-weight: bold;
+  color: var(--primary);
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+/* Download Button */
+.download-btn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.download-btn button {
+  background-color: var(--primary);
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.download-btn button:hover {
+  background-color: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .profile-header h1 {
+    font-size: 26px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+}
+
+/* Print */
+@media print {
+  .download-btn {
+    display: none;
+  }
+
+  .container {
+    box-shadow: none;
+    max-width: 794px;
+    padding: 20px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="download-btn">
+    <button onclick="window.print()"><i class="fas fa-print"></i> Download / Print Resume</button>
+  </div>
+
+  <div class="container">
+    <header class="profile-header">
+      <h1>Sandeep Kumar</h1>
+      <div class="profile-grid">
+        <div><i class="fas fa-location-dot"></i> Mohali, India</div>
+        <div><i class="fas fa-calendar-day"></i> DOB: 23-Nov-2003</div>
+        <div><i class="fas fa-phone"></i> +91 6239315288</div>
+        <div><i class="fas fa-envelope"></i> <a href="mailto:er.sandeep915@gmail.com">er.sandeep915@gmail.com</a></div>
+        <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sandeep-kumar-1159a5246" target="_blank">linkedin.com/in/sandeep-kumar</a></div>
+        <div><i class="fab fa-github"></i> <a href="https://github.com/Sandeep-coder915" target="_blank">github.com/Sandeep-coder915</a></div>
+        <div><i class="fas fa-globe"></i> <a href="https://creatersandeep.com" target="_blank">creatersandeep.com</a></div>
+      </div>
+    </header>
+
+<section class="section">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li><i class="fas fa-code"></i> C/C++</li>
+    <li><i class="fab fa-python"></i> Python</li>
+    <li><i class="fab fa-js-square"></i> JavaScript</li>
+    <li><i class="fab fa-html5"></i> HTML & CSS</li>
+    <li><i class="fas fa-paint-brush"></i> Tailwind</li>
+    <li><i class="fas fa-layer-group"></i> Bootstrap</li>
+    <li><i class="fab fa-react"></i> React.js</li>
+    <li><i class="fab fa-node-js"></i> Express.js</li>
+    <li><i class="fab fa-node-js"></i> Node.js</li>
+    <li><i class="fas fa-database"></i> MongoDB</li>
+    <li><i class="fas fa-shopping-cart"></i> Shopify</li>
+    <li><i class="fas fa-pen-nib"></i> Canva</li>
+    <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+    <li><i class="fas fa-paper-plane"></i> Postman</li>
+    <li><i class="fas fa-box-open"></i> NPM</li>
+    <li><i class="fas fa-chart-line"></i> Google Analytics</li>
+    <li><i class="fab fa-facebook"></i> Meta Ads</li>
+    <li><i class="fas fa-search"></i> Product Research</li>
+  </ul>
+</section>
+
+    <section class="section">
+      <h2>Work Experience</h2>
+      <p class="job-title">E-commerce Executive – Swayy (June 2025 – Present)</p>
+      <ul>
+        <li>Developed and managed the company’s Shopify store from scratch, ensuring a seamless user experience and responsive design.</li>
+        <li>Handled all official social media platforms, including Instagram and Facebook, improving brand visibility and engagement.</li>
+        <li>Planned and executed Meta (Facebook & Instagram) ad campaigns to drive sales and improve traffic.</li>
+        <li>Performed in-depth product research to identify trending items and optimize inventory strategy.</li>
+       </ul>
+<br>
+<br>
+      <p class="job-title">Web Developer – Revaais Techno Traders (July 2024 – Present)</p>
+      <ul>
+        <li>Developed and maintained <strong>Revaais.com</strong> (e-commerce website).</li>
+        <li>Designed <strong>Exoticveda.com</strong>, a fully responsive website.</li>
+        <li>Worked on Amazon Seller Account including A+ content creation and product listing.</li>
+      </ul>
+
+      <p class="job-title">Full Stack Developer – Hopingminds (Jan 2024 – July 2024)</p>
+      <ul>
+        <li>Developed responsive websites using React and Node.js.</li>
+        <li>Performed code refactoring to optimize maintainability and performance.</li>
+        <li>Led team learning sessions and mentored junior developers.</li>
+        <li>Worked with Express, MongoDB, and NPM to build high-quality software features.</li>
+      </ul>
+
+      <p class="job-title">AI/ML Intern – Coincent (2022)</p>
+      <ul>
+        <li>Worked on data science projects using Python libraries (NumPy, Pandas, Matplotlib).</li>
+        <li>Developed a chatbot and participated in ML model training tasks.</li>
+      </ul>
+
+      <p class="job-title">Trainee – IIT Ropar L1 & L2 Certifications (2021–2022)</p>
+      <ul>
+        <li>Trained in Python, OOPs, DSA, AI/ML, and deep learning fundamentals.</li>
+        <li>Built AI models and worked on assigned real-time projects.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Tech (Software Engineering)</strong>, IKGPTU Main Campus, Kapurthala – June 2024 – 7.95 CGPA</li>
+        <li><strong>12th Standard</strong>, GSS School Kartarpur – 2020 – 82.6%</li>
+        <li><strong>10th Standard</strong>, GSS School Dialpur – 2018 – 73.8%</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Swayy.co.in</strong> – Shopify: Developed a user-friendly and fully responsive e-commerce website for <strong>Swayy</strong> using Shopify. Implemented a clean, professional design optimized for mobile and desktop users. Handled UI customization, product listing, and basic SEO setup.</li>
+        <li><strong>Beauty Services At Home</strong> – React, Vite, Tailwind, EmailJS: On-demand beauty service platform with booking interface and SEO optimization.</li>
+         <br>
+         <br>
+       
+        <li><strong>Exotic Veda</strong> – React, CSS, Router Dom: Natural products site with responsive design and EmailJS integration.</li>
+         
+        <li><strong>Revaais E-commerce</strong> – Shopify: Customized Shopify store with liquid templates and mobile optimization.</li>
+    
+        <li><strong>Client Portfolio</strong> – React, Tailwind, EmailJS: Dynamic personal website with parallax effects and real-time contact form.</li>
+        <li><strong>Medicare</strong> – Online doctor appointment system with registration, booking, and secure architecture.</li>
+      </ul>
+    </section>
+    <section class="section declaration">
+      <h2>Declaration</h2>
+      <p>I hereby declare that the above information is true and correct to the best of my knowledge and belief.</p>
+      <p>Date:18-08-25</p>
+      <br>
+      <br>
+      <br>
+      <p><strong>Signature:</strong>  </p>
+    </section>
+  </div>
+</body>
+</html>
